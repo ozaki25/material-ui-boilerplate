@@ -1,13 +1,14 @@
 import React from 'react';
+import Container from '../templates/Container';
 import { ROUTES } from '../../routes';
 
 function Top({ history }) {
   const onClick = () => history.push(ROUTES.about);
   return (
-    <div>
+    <Container title="Top" history={history}>
       <p>Top</p>
       <button onClick={onClick}>Aboutへ</button>
-    </div>
+    </Container>
   );
 }
 
