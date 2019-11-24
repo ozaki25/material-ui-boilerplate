@@ -12,9 +12,15 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <>
-        <Route path="/" exact component={Top} />
-        <Route path={ROUTES.top} exact component={Top} />
-        <Route path={ROUTES.about} exact component={About} />
+        <Route path="/" exact>
+          <Top />
+        </Route>
+        <Route path={ROUTES.top} exact>
+          <Top />
+        </Route>
+        <Route path={ROUTES.about} exact>
+          <About />
+        </Route>
       </>
     </Switch>
   </BrowserRouter>

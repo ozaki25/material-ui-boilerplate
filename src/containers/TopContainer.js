@@ -1,9 +1,9 @@
 import React from 'react';
-import useReactRouter from 'use-react-router';
+import { useHistory } from 'react-router-dom';
 import Top from '../components/pages/Top';
 
 function TopContainer() {
-  const { history } = useReactRouter();
+  const history = useHistory();
   return <Top history={history} />;
 }
 
